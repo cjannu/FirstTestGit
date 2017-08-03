@@ -1,3 +1,10 @@
+import numpy as np
+from scipy.misc import imread, imresize
+import matplotlib.pyplot as plt
+from sklearn import tree
+import tensorflow as tf
+
+
 # collect string / test length
 
 x = input("please enter input string:")
@@ -33,5 +40,12 @@ elif a == b and b == c and a == c:
 else:
 	print("This is an isosceles triangle.")
 
+#Function
+ def function(x):
+    Y = x*x
+    return Y
 
-# 
+Z = function(10)
+
+print (Z)
+
